@@ -46,7 +46,7 @@ public class LivreController {
 
         Livre newLivre = livreDao.save(livre);
 
-        if (livre==null){
+        if (newLivre==null){
             return ResponseEntity.noContent().build();
         }
 
